@@ -23,6 +23,7 @@ requirements:
     - openai
     - numpy
     - cachetools
+    - requests
 
 test:
   imports:
