@@ -1,5 +1,5 @@
 {% set name = "gptcache" %}
-{% set version = "0.1.40" %}
+{% set version = "0.1.44" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/gptcache-{{ version }}.tar.gz
-  sha256: 5fe4bcf3a45946177cb845b3e1ec01159f10622600e1384b9de0c7c6065d10d5
+  sha256: d3d5e6a75c57594dc58212c2d6c53a7999c23ede30e0be66d213d885c0ad0be9
 
 build:
   noarch: python
@@ -23,6 +23,7 @@ requirements:
     - openai
     - numpy
     - cachetools
+    - requests
 
 test:
   imports:
